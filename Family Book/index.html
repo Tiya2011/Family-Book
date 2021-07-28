@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Family Book</title>
+    </head>
+    <body>
+        <center style="margin-top:40px;"></center>
+        <img src="happy-family-cartoon-vector-21559527.jpg" style="width:30%" id="family_image">;
+        <h4 id="family_name"></h4>
+  
+
+      
+        <button onclick="next()">
+Next Family Member
+        </button>
+    </body>
+    <script>
+        var images=["cute-girl-go-school-cartoon-260nw-617372144.jpg", "54698246da1c1a4514b572ca7d9c0c03.jpg", "MOM.jpg", "DAD.jpg"];
+    var names=["Tiya", "Tishya", "Mom", "Dad"];
+var i=0;
+function next(){
+    i++;
+    var num=3
+        if(i>num)
+    {
+        i=0;
+
+    }
+    var update_image=images[i];
+    var update_name=names[i];
+    document.getElementById("family_image").src=update_image;
+    document.getElementById("family_name").innerHTML=update_name;
+}
+    </script>
+
+</html>
